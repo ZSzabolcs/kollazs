@@ -1,37 +1,99 @@
 <!DOCTYPE html>
-<html>
-	<head>
+    <html>
+        <head>
                 <title>
                         szovicc webaruhaz.html
                 </title>
+                <style>
+                    body 
+                    {
+                        margin: 0;
+                        font-family: "Lato", sans-serif;
+                    }
+                    
+                    .sidebar 
+                    {
+                        margin: 0;
+                        padding: 0;
+                        width: 200px;
+                        background-color: gray;
+                        position: fixed;
+                        height: 100%;
+                        overflow: auto;
+                    }
+                    
+                    .sidebar a 
+                    {
+                        display: block;
+                        color: black;
+                        padding: 16px;
+                        text-decoration: none;
+                    }
+                    
+                    .sidebar a.active 
+                    {
+                        background-color: goldenrod;
+                        color: white;
+                    }
+                    
+                    .sidebar a:hover:not(.active) 
+                    {
+                        background-color: #555;
+                        color: white;
+                    }
+                    
+                    div.content 
+                    {
+                        margin-left: 200px;
+                        padding: 1px 16px;
+                        height: 1000px;
+                    }
+                    
+                    @media screen and (max-width: 700px) 
+                    {
+                        .sidebar 
+                        {
+                        width: 100%;
+                        height: auto;
+                        position: relative;
+                        }
+                        .sidebar a {float: left;}
+                        div.content {margin-left: 0;}
+                    }
+                    
+                    @media screen and (max-width: 400px) 
+                    {
+                        .sidebar a 
+                        {
+                        text-align: center;
+                        float: none;
+                        }
+                    }
+                  </style>
         </head>
+        <body style="background-color: green;">
 
-	<body style="background-color: green;">
-                <nav>
-                        <button>
-                            <a href="https://zszabolcs.github.io/kollazs/index.html">HOME</a>
-                        </button>
-                        <button>
-                            <a href="https://zszabolcs.github.io/kollazs/szovicc webaruhaz.html">Szóvicc webáruház</a>
-                        </button>
-                        <button>
-                            <a href="https://zszabolcs.github.io/kollazs/orarend.html">Órarend</a>
-                        </button>
-                        <button>
-                            <a href="https://zszabolcs.github.io/kollazs/lista.html">Lista</a>
-                        </button>
-                </nav>
+            <div class="sidebar">
 
-                <h1>Házi feladat</h1>
-                <h2>Zelenák Szabolcs</h2>
-                <h3>Zelenák Szabolcs</h3>
-                <h4>Zelenák Szabolcs</h4>
-                <h5>Zelenák Szabolcs</h5>
-                <h6>Zelenák Szabolcs</h6>
+                <a href="https://zszabolcs.github.io/kollazs/index.html" class="active"> HOME</a>
 
-                <a href="https://www.google.com/search?q=sz%C3%B3viccek&sxsrf=AOaemvKJJMR8rSWjhz2z1e32x9DudejSlw:1633555019940&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjDvrzV2rbzAhXuAhAIHbHZB1EQ_AUoAXoECAEQAw&biw=1920&bih=937&dpr=1#imgrc=tkD06M3JqDAmUM"> 
-                <img src="https://i.pinimg.com/originals/4d/c4/cd/4dc4cde719c6c030c590b31ccc7f878f.jpg" />
-                </a>
+                <a href="https://zszabolcs.github.io/kollazs/szovicc webaruhaz.html">Szóvicc webáruház</a>
 
-	</body>
-</html>
+                <a href="https://zszabolcs.github.io/kollazs/orarend.html">Órarend</a>
+
+                <a href="https://zszabolcs.github.io/kollazs/lista.html">Lista</a>
+            </div>
+            <div class="content">
+                    <h1>Házi feladat</h1>
+                    <h2>Zelenák Szabolcs</h2>
+                    <h3>Zelenák Szabolcs</h3>
+                    <h4>Zelenák Szabolcs</h4>
+                    <h5>Zelenák Szabolcs</h5>
+                    <h6>Zelenák Szabolcs</h6>
+
+                    <a href="https://www.google.com/search?q=sz%C3%B3viccek&sxsrf=AOaemvKJJMR8rSWjhz2z1e32x9DudejSlw:1633555019940&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjDvrzV2rbzAhXuAhAIHbHZB1EQ_AUoAXoECAEQAw&biw=1920&bih=937&dpr=1#imgrc=tkD06M3JqDAmUM"> 
+                    <img src="https://i.pinimg.com/originals/4d/c4/cd/4dc4cde719c6c030c590b31ccc7f878f.jpg" />
+                    </a>
+            </div>
+        </body>
+    </html>

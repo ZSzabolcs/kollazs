@@ -7,210 +7,276 @@
             <title>
                 Orarend
             </title>
+            <style>
+                body 
+                {
+                    margin: 0;
+                    font-family: "Lato", sans-serif;
+                    background-color: #FFE4C4;
+                }
+                
+                .sidebar 
+                {
+                    margin: 0;
+                    padding: 0;
+                    width: 200px;
+                    background-color: gray;
+                    position: fixed;
+                    height: 100%;
+                    overflow: auto;
+                }
+                
+                .sidebar a 
+                {
+                    display: block;
+                    color: black;
+                    padding: 16px;
+                    text-decoration: none;
+                }
+                
+                .sidebar a.active 
+                {
+                    background-color: goldenrod;
+                    color: white;
+                }
+                
+                .sidebar a:hover:not(.active) 
+                {
+                    background-color: #555;
+                    color: white;
+                }
+                
+                div.content 
+                {
+                    margin-left: 200px;
+                    padding: 1px 16px;
+                    height: 1000px;
+                }
+                
+                @media screen and (max-width: 700px) 
+                {
+                    .sidebar 
+                    {
+                    width: 100%;
+                    height: auto;
+                    position: relative;
+                    }
+                    .sidebar a {float: left;}
+                    div.content {margin-left: 0;}
+                }
+                
+                @media screen and (max-width: 400px) 
+                {
+                    .sidebar a 
+                    {
+                    text-align: center;
+                    float: none;
+                    }
+                }
+              </style>
         </head>
         <body>
 
-            <nav>
-                <button>
-                    <a href="https://zszabolcs.github.io/kollazs/index.html">HOME</a>
-                </button>
-                <button>
-                    <a href="https://zszabolcs.github.io/kollazs/szovicc webaruhaz.html">Szóvicc webáruház</a>
-                </button>
-                <button>
-                    <a href="https://zszabolcs.github.io/kollazs/orarend.html">Órarend</a>
-                </button>
-                <button>
-                    <a href="https://zszabolcs.github.io/kollazs/lista.html">Lista</a>
-                </button>
-            </nav>
-            
-            <h1 style="text-align:center";>
-                <b>
-                    <u>
-                        Zelenák Szabolcs 
-                    </u>
-                </b>
-            </h1>
-            <table> 
-                <tr>
-                    <th></th>
-                    <th>
-                        Hétfő
-                    </th>
-                    <th>
-                        Kedd
-                    </th>
-                    <th>
-                        Szerda
-                    </th>
-                    <th>
-                        Csütörtök
-                    </th>
-                    <th>
-                        Péntek
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        0. Óra:
-                    </th>
-                    <td>
-                        -
-                    </td>
-                    <td>
-                        -
-                    </td>
-                    <td>
-                        -
-                    </td>
-                    <td>
-                        Testnevelés
-                    </td>
-                    <td>
-                        Programozási alapok
-                    </td>
-                </tr>
-                <tr>
-                    <th>
-                        1. Óra:
-                    </th>
-                    <td>
-                        Matematika
-                    </td>
-                    <td>
-                        -
-                    </td>
-                    <td>
-                        Történelem
-                    </td>
-                    <td>
-                        Testnevelés
-                    </td>
-                    <td>
-                        Programozási alapok
-                    </td>
-                </tr>
-                <tr>
-                    <th>
-                        2. Óra:
-                    </th>
-                    <td>
-                        Testnevelés
-                    </td>
-                    <td>
-                        Angol nyelv
-                    </td>
-                    <td>
-                        Matematika
-                    </td>
-                    <td>
-                        IKT projektmunka
-                    </td>
-                    <td>
-                        Informatika és távközlési alapok
-                    </td>
-                </tr>
-                <tr>
-                    <th>
-                        3. Óra:
-                    </th>
-                    <td>
-                        Angol nyelv
-                    </td>
-                    <td>
-                        Osztályfőnöki óra
-                    </td>
-                    <td>
-                        Komplex természettudomány
-                    </td>
-                    <td>
-                        Magyar nyelv és irodalom
-                    </td>
-                    <td>
-                        Informatika és távközlési alapok
-                    </td>
-                </tr>
-                <tr>
-                    <th>
-                        4. Óra:
-                    </th>
-                    <td>
-                        Történelem
-                    </td>
-                    <td>
-                        Matematika
-                    </td>
-                    <td>
-                        Angol nyelv
-                    </td>
-                    <td>
-                        Matematika
-                    </td>
-                    <td>
-                        Informatika és távközlési alapok
-                    </td>
-                </tr>
-                <tr>
-                    <th>
-                        5. Óra:
-                    </th>
-                    <td>
-                        Magyar nyelv és irodalom
-                    </td>
-                    <td>
-                        IKT projektmunka
-                    </td>
-                    <td>
-                        Magyar nyelv és irodalom
-                    </td>
-                    <td>
-                        Komplex természettudomány
-                    </td>
-                    <td>
-                        Történelem
-                    </td>
-                </tr>
-                <tr>
-                    <th>
-                        6. Óra:
-                    </th>
-                    <td>
-                        Magyar nyelv és irodalom
-                    </td>
-                    <td>
-                        Magyar nyelv és irodalom
-                    </td>
-                    <td>
-                        Digitális kultúra
-                    </td>
-                    <td>
-                        Angol nyelv
-                    </td>
-                    <td>
-                        Matematika kompetenciamérés
-                    </td>
-                </tr>
-                <tr>
-                    <th>
-                        7. Óra:
-                    </th>
-                    <td>
-                        Komplex természettudomány
-                    </td>
-                    <td>
-                        -
-                    </td>
-                    <td>
-                        Digitális kultúra
-                    </td>
-                    <td>
-                        -
-                    </td>
-                    <td>
-                        Testnevelés
-                    </td>
-                </tr>
-            </table>
+            <div class="sidebar">
+
+                <a href="https://zszabolcs.github.io/kollazs/index.html"> HOME</a>
+
+                <a href="https://zszabolcs.github.io/kollazs/szovicc webaruhaz.html">Szóvicc webáruház</a>
+
+                <a href="https://zszabolcs.github.io/kollazs/orarend.html" class="active">Órarend</a>
+
+                <a href="https://zszabolcs.github.io/kollazs/lista.html">Lista</a>
+            </div>
+
+            <div class="content">
+
+                <h1 style="text-align:center";>
+                    <b>
+                        <u>
+                            Zelenák Szabolcs 
+                        </u>
+                    </b>
+                </h1>
+                <table> 
+                    <tr>
+                        <th></th>
+                        <th>
+                            Hétfő
+                        </th>
+                        <th>
+                            Kedd
+                        </th>
+                        <th>
+                            Szerda
+                        </th>
+                        <th>
+                            Csütörtök
+                        </th>
+                        <th>
+                            Péntek
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            0. Óra:
+                        </th>
+                        <td>
+                            -
+                        </td>
+                        <td>
+                            -
+                        </td>
+                        <td>
+                            -
+                        </td>
+                        <td>
+                            Testnevelés
+                        </td>
+                        <td>
+                            Programozási alapok
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            1. Óra:
+                        </th>
+                        <td>
+                            Matematika
+                        </td>
+                        <td>
+                            -
+                        </td>
+                        <td>
+                            Történelem
+                        </td>
+                        <td>
+                            Testnevelés
+                        </td>
+                        <td>
+                            Programozási alapok
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            2. Óra:
+                        </th>
+                        <td>
+                            Testnevelés
+                        </td>
+                        <td>
+                            Angol nyelv
+                        </td>
+                        <td>
+                            Matematika
+                        </td>
+                        <td>
+                            IKT projektmunka
+                        </td>
+                        <td>
+                            Informatika és távközlési alapok
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            3. Óra:
+                        </th>
+                        <td>
+                            Angol nyelv
+                        </td>
+                        <td>
+                            Osztályfőnöki óra
+                        </td>
+                        <td>
+                            Komplex természettudomány
+                        </td>
+                        <td>
+                            Magyar nyelv és irodalom
+                        </td>
+                        <td>
+                            Informatika és távközlési alapok
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            4. Óra:
+                        </th>
+                        <td>
+                            Történelem
+                        </td>
+                        <td>
+                            Matematika
+                        </td>
+                        <td>
+                            Angol nyelv
+                        </td>
+                        <td>
+                            Matematika
+                        </td>
+                        <td>
+                            Informatika és távközlési alapok
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            5. Óra:
+                        </th>
+                        <td>
+                            Magyar nyelv és irodalom
+                        </td>
+                        <td>
+                            IKT projektmunka
+                        </td>
+                        <td>
+                            Magyar nyelv és irodalom
+                        </td>
+                        <td>
+                            Komplex természettudomány
+                        </td>
+                        <td>
+                            Történelem
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            6. Óra:
+                        </th>
+                        <td>
+                            Magyar nyelv és irodalom
+                        </td>
+                        <td>
+                            Magyar nyelv és irodalom
+                        </td>
+                        <td>
+                            Digitális kultúra
+                        </td>
+                        <td>
+                            Angol nyelv
+                        </td>
+                        <td>
+                            Matematika kompetenciamérés
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            7. Óra:
+                        </th>
+                        <td>
+                            Komplex természettudomány
+                        </td>
+                        <td>
+                            -
+                        </td>
+                        <td>
+                            Digitális kultúra
+                        </td>
+                        <td>
+                            -
+                        </td>
+                        <td>
+                            Testnevelés
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </body>
     </html>

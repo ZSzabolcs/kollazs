@@ -4,32 +4,95 @@
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Zelenak Szabolcs oldala</title>
+            <style>
+                body 
+                {
+                    margin: 0;
+                    font-family: "Lato", sans-serif;
+                }
+                
+                .sidebar 
+                {
+                    margin: 0;
+                    padding: 0;
+                    width: 200px;
+                    background-color: gray;
+                    position: fixed;
+                    height: 100%;
+                    overflow: auto;
+                }
+                
+                .sidebar a 
+                {
+                    display: block;
+                    color: black;
+                    padding: 16px;
+                    text-decoration: none;
+                }
+                
+                .sidebar a.active 
+                {
+                    background-color: goldenrod;
+                    color: white;
+                }
+                
+                .sidebar a:hover:not(.active) 
+                {
+                    background-color: #555;
+                    color: white;
+                }
+                
+                div.content 
+                {
+                    margin-left: 200px;
+                    padding: 1px 16px;
+                    height: 1000px;
+                }
+                
+                @media screen and (max-width: 700px) 
+                {
+                    .sidebar 
+                    {
+                    width: 100%;
+                    height: auto;
+                    position: relative;
+                    }
+                    .sidebar a {float: left;}
+                    div.content {margin-left: 0;}
+                }
+                
+                @media screen and (max-width: 400px) 
+                {
+                    .sidebar a 
+                    {
+                    text-align: center;
+                    float: none;
+                    }
+                }
+              </style>
         </head>
-            <body style= "background-color:orange;">
+        <body style= "background-color:orange;">
 
-                <nav>
-                    <button>
-                        <a href="https://zszabolcs.github.io/kollazs/index.html">HOME</a>
-                    </button>
-                    <button>
+                <div class="sidebar">
+
+                        <a href="https://zszabolcs.github.io/kollazs/index.html" class="active"> HOME</a>
+
                         <a href="https://zszabolcs.github.io/kollazs/szovicc webaruhaz.html">Szóvicc webáruház</a>
-                    </button>
-                    <button>
-                        <a href="https://zszabolcs.github.io/kollazs/orarend.html">Órarend</a>
-                    </button>
-                    <button>
-                        <a href="https://zszabolcs.github.io/kollazs/lista.html">Lista</a>
-                    </button>
-                </nav>
-        
-                <h1>Házi feladat</h1>
-                <h2>Zelenák Szabolcs</h2>
-                <h3>Zelenák Szabolcs</h3>
-                <h4>Zelenák Szabolcs</h4>
-                <h5>Zelenák Szabolcs</h5>
-                <h6>Zelenák Szabolcs</h6>
 
-                <p>Kollázs képem:</p>
-                <img src="https://github.com/ZSzabolcs/kollazs/blob/main/kollazs.png?raw=true" alt=Kollázs title=Kollázs 		 width=500>
+                        <a href="https://zszabolcs.github.io/kollazs/orarend.html">Órarend</a>
+
+                        <a href="https://zszabolcs.github.io/kollazs/lista.html">Lista</a>
+                </div>
+                <div class="content">
+                    <h1>Házi feladat</h1>
+                    <h2>Zelenák Szabolcs</h2>
+                    <h3>Zelenák Szabolcs</h3>
+                    <h4>Zelenák Szabolcs</h4>
+                    <h5>Zelenák Szabolcs</h5>
+                    <h6>Zelenák Szabolcs</h6>
+
+                    <p>Kollázs képem:</p>
+                    <img src="https://github.com/ZSzabolcs/kollazs/blob/main/kollazs.png?raw=true" alt=Kollázs title=Kollázs 		 width=500>
+                </div>
             </body>
     </html>
