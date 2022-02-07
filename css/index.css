@@ -4,6 +4,12 @@ body
     margin: 0;
     font-family:'The Nautigal', cursive;
 }
+
+h1
+{
+    text-align: center;
+}
+
 .sidebar 
 {
     font-family: 'Lora', serif;
