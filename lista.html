@@ -1,9 +1,11 @@
 <!DOCTYPE html>
     <html lang="hu">
         <head>
+
             <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
             <link rel="apple-touch-icon" sizes="57x57" href="https://zszabolcs.github.io/kollazs/favicon/apple-icon-57x57.png">
             <link rel="apple-touch-icon" sizes="60x60" href="https://zszabolcs.github.io/kollazs/favicon/apple-icon-60x60.png">
             <link rel="apple-touch-icon" sizes="72x72" href="https://zszabolcs.github.io/kollazs/favicon/apple-icon-72x72.png">
@@ -21,76 +23,13 @@
             <meta name="msapplication-TileColor" content="#ffffff">
             <meta name="msapplication-TileImage" content="https://zszabolcs.github.io/kollazs//ms-icon-144x144.png">
             <meta name="theme-color" content="#ffffff">
+
+            <link rel="stylesheet" style="text/css" href="lista.css">
+
             <title>lista</title>
-            <style>
-                body 
-                {
-                    margin: 0;
-                    font-family:'The Nautigal', cursive;
-                }
-                
-                .sidebar 
-                {
-                    font-family: 'Lora', serif;
-                    margin: 0;
-                    padding: 0;
-                    width: 200px;
-                    background-color: gray;
-                    position: fixed;
-                    height: 100%;
-                    overflow: auto;
-                }
-                
-                .sidebar a 
-                {
-                    display: block;
-                    color: black;
-                    padding: 16px;
-                    text-decoration: none;
-                }
-                
-                .sidebar a.active 
-                {
-                    background-color: goldenrod;
-                    color: white;
-                }
-                
-                .sidebar a:hover:not(.active) 
-                {
-                    background-color: #555;
-                    color: white;
-                }
-                
-                div.content 
-                {
-                    margin-left: 200px;
-                    padding: 1px 16px;
-                    height: 1000px;
-                }
-                
-                @media screen and (max-width: 700px) 
-                {
-                    .sidebar 
-                    {
-                    width: 100%;
-                    height: auto;
-                    position: relative;
-                    }
-                    .sidebar a {float: left;}
-                    div.content {margin-left: 0;}
-                }
-                
-                @media screen and (max-width: 400px) 
-                {
-                    .sidebar a 
-                    {
-                    text-align: center;
-                    float: none;
-                    }
-                }
-              </style>
+
         </head>
-        <body style="background-color: orange;">
+        <body>
             
             <div class="sidebar">
 
@@ -116,6 +55,11 @@
                 </ol>
                 <h2> Hobbijaim: </h2>
                 <ul> <li> Gitározás </li> <li> Fotózás </li> <li> Vers írás </li> <li> Biciklizés </li></ul>
+            </div>
+            <div class="footer">
+                <p>
+                    Footer
+                </p>
             </div>
         </body>
     </html>
