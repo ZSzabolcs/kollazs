@@ -21,7 +21,7 @@ table,th,tr,td
     margin: 0;
     padding: 0;
     width: 200px;
-    background-color: gray;
+    background-color: LightGray;
     position: fixed;
     height: 100%;
     overflow: auto;
@@ -37,13 +37,13 @@ table,th,tr,td
                 
 .sidebar a.active 
 {
-    background-color: goldenrod;
+    background-color: SlateGrey;
     color: white;
 }
                 
 .sidebar a:hover:not(.active) 
 {
-    background-color: #555;
+    background-color: gray;
     color: white;
 }
                 
@@ -80,7 +80,7 @@ div.content
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: red;
+    background-color: BurlyWood;
     color: white;
     text-align: center;
 }
