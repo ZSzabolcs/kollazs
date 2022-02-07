@@ -138,7 +138,7 @@ h1
     margin: 0;
     padding: 0;
     width: 200px;
-    background-color: gray;
+    background-color: LightGray;
     position: fixed;
     height: 100%;
     overflow: auto;
@@ -154,26 +154,33 @@ h1
                 
 .sidebar a.active 
 {
-    background-color: goldenrod;
+    background-color: SlateGrey;
     color: white;
 }
                 
 .sidebar a:hover:not(.active) 
 {
-    background-color: #555;
+    background-color: gray;
     color: white;
 }
+                
+div.content 
+{
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+                
 @media screen and (max-width: 700px) 
 {
-        .sidebar 
-        {
-            width: 100%;
-            height: auto;
-            position: relative;
-        }
-            .sidebar a {float: left;}
-            div.content {margin-left: 0;
-        }
+    .sidebar 
+    {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
 }
                 
 @media screen and (max-width: 400px) 
@@ -190,7 +197,7 @@ h1
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: red;
+    background-color: BurlyWood;
     color: white;
     text-align: center;
 }
