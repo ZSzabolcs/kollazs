@@ -26,13 +26,13 @@ body
                 
 .sidebar a.active 
 {
-    background-color: goldenrod;
+    background-color: SlateGrey;
     color: white;
 }
                 
 .sidebar a:hover:not(.active) 
 {
-    background-color: #555;
+    background-color: gray;
     color: white;
 }
                 
@@ -69,7 +69,7 @@ div.content
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: red;
+    background-color: BurlyWood;
     color: white;
     text-align: center;
 }
