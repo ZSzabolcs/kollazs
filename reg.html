@@ -62,8 +62,11 @@
           {
             if(username != " ")
             {
-              localStore.setItem(password.value, password2.value)
-              alert("Regisztráció sikeres!")
+              if(password == password2)
+              {
+                localStore.setItem(password.value, password2.value)
+                alert("Regisztráció sikeres!")
+              }
             }
           }
         </script>
