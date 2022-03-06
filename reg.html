@@ -57,10 +57,11 @@
           </button>
         </fieldset>
         <script>
-          function reg(username, password, password2)
+          function reg(password, password2)
           {
-            localStore.setItem(username.value, password.value, password2.value)
-            alert("Regisztráció sikeres!")
+            if(
+              localStore.setItem(password.value, password2.value)
+              alert("Regisztráció sikeres!")
           }
         </script>
       </div>
