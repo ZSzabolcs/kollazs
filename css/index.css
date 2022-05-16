@@ -11,6 +11,11 @@ h1
     text-align: center;
 }
 
+.left
+{
+    margin-left: 120px;
+}
+
 .sidebar 
 {
     font-family: 'Lora', serif;
