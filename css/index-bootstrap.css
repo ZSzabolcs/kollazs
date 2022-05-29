@@ -1,0 +1,18 @@
+.navbar-nav a:hover
+{
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+.navbar-nav a
+{
+    text-align: center;
+}
+
+@media screen and (max-width: 1399px)
+{
+    .navbar
+    {
+        position: static;
+    }
+}
